@@ -1,0 +1,38 @@
+{
+  "configs": [
+    {
+      "title": "壁纸替换",
+      "config": "wallpaper/config.json",
+      "preferences": [
+        {
+          "type": "button",
+          "title": "选择 Salt Player 路径",
+          "summary": "打开原生文件选择器并选择本软件目录内任意文件",
+          "arrow_type": "none",
+          "on_click": "com.gg.wallpaper.WallpaperPlugin.chooseSteamPath"
+        },
+        {
+          "type": "button",
+          "title": "自动检测 Salt Player 路径",
+          "summary": "扫描配置路径、常见目录与 Steam 库并定位本软件安装位置",
+          "arrow_type": "none",
+          "on_click": "com.gg.wallpaper.WallpaperPlugin.detectSteamPath"
+        },
+        {
+          "type": "button",
+          "title": "选择新壁纸",
+          "summary": "打开外置文件管理器选择 jpg，选择后立即生效",
+          "arrow_type": "none",
+          "on_click": "com.gg.wallpaper.WallpaperPlugin.chooseWallpaper"
+        },
+        {
+          "type": "button",
+          "title": "恢复默认壁纸",
+          "summary": "恢复首次替换时备份的默认图",
+          "arrow_type": "none",
+          "on_click": "com.gg.wallpaper.WallpaperPlugin.restoreDefaultWallpaper"
+        }
+      ]
+    }
+  ]
+}
